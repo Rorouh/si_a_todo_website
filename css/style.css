@@ -839,6 +839,18 @@ a {
     font-family: 'Syne', sans-serif;
     font-size: 1.8rem;
     font-weight: 800;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.footer-logo-img {
+    height: 46px;
+    width: 46px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1.5px solid var(--primary);
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.2);
 }
 
 .footer-brand-title span {
