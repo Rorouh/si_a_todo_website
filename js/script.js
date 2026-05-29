@@ -165,4 +165,67 @@ document.addEventListener("DOMContentLoaded", () => {
     if (window.location.hash === "#contacto" && document.getElementById("event_type")) {
         document.getElementById("event_type").value = "mesa_vip";
     }
+
+    // 7. LIGHTBOX MODAL DE EVENTOS ICONICOS (WIDGET DE IMAGEN GRANDE)
+    const marqueeWrapperEl = document.getElementById("marquee-wrapper");
+    if (marqueeWrapperEl) {
+        marqueeWrapperEl.addEventListener("click", (e) => {
+            const marqueeItem = e.target.closest(".marquee-item");
+            if (marqueeItem) {
+                const imgEl = marqueeItem.querySelector("img");
+                if (imgEl) {
+                    const imgSrc = imgEl.getAttribute("src");
+                    
+                    // Crear elementos del Lightbox
+                    const lbOverlay = document.createElement("div");
+                    lbOverlay.className = "lightbox-overlay";
+                    
+                    const lbWrapper = document.createElement("div");
+                    lbWrapper.className = "lightbox-wrapper";
+                    
+                    const lbImg = document.createElement("img");
+                    lbImg.className = "lightbox-img";
+                    lbImg.src = imgSrc;
+                    lbImg.alt = imgEl.alt || "Imagen de Evento";
+                    
+                    const lbClose = document.createElement("div");
+                    lbClose.className = "lightbox-close";
+                    lbClose.innerHTML = "&times;";
+                    lbClose.setAttribute("aria-label", "Cerrar imagen");
+                    
+                    lbWrapper.appendChild(lbImg);
+                    lbWrapper.appendChild(lbClose);
+                    lbOverlay.appendChild(lbWrapper);
+                    document.body.appendChild(lbOverlay);
+                    
+                    // Activar animacion de entrada
+                    setTimeout(() => lbOverlay.classList.add("active"), 50);
+                    
+                    // Funciones de cierre
+                    const closeLb = () => {
+                        lbOverlay.classList.remove("active");
+                        setTimeout(() => {
+                            if (document.body.contains(lbOverlay)) {
+                                document.body.removeChild(lbOverlay);
+                            }
+                        }, 350);
+                    };
+                    
+                    lbClose.addEventListener("click", closeLb);
+                    lbOverlay.addEventListener("click", (evt) => {
+                        if (evt.target === lbOverlay) closeLb();
+                    });
+                    
+                    // Cerrar con Escape
+                    const handleEsc = (evt) => {
+                        if (evt.key === "Escape") {
+                            closeLb();
+                            document.removeEventListener("keydown", handleEsc);
+                        }
+                    };
+                    document.addEventListener("keydown", handleEsc);
+                }
+            }
+        });
+    }
 });
