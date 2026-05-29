@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SÍ A TODO | Eventos & Experiencias de Fiesta Premium</title>
+    
+    <!-- Meta tags SEO -->
+    <meta name="description" content="En Sí a Todo creamos experiencias de fiesta exclusivas, festivales y eventos corporativos de alto nivel. La vida es un evento. Dile que sí.">
+    <meta name="keywords" content="Si a todo, fiestas madrid, eventos premium, discotecas españa, reservados vip, festivales perreo, dj sets">
+    <meta name="author" content="Sí a Todo">
+    
+    <!-- Open Graph (Facebook / LinkedIn) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="SÍ A TODO | Eventos & Experiencias de Fiesta Premium">
+    <meta property="og:description" content="En Sí a Todo creamos noches legendarias. Entradas de eventos, reservados VIP y tablón de anuncios fiesteros.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&h=630&q=80">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SÍ A TODO | Eventos Premium">
+    <meta name="twitter:description" content="¿Preparado para el desmadre? Consigue tus entradas para los próximos eventos de Sí a Todo.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&h=630&q=80">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=32&h=32&q=80">
+</head>
+<body>
+
+    <!-- 1. NAVIGATION BAR -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-brand" id="nav-brand">
+                <img src="logo_si_a_todo.jpg" alt="Logo Sí a Todo" class="nav-logo"> SÍ A <span>TODO</span>
+            </a>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link active" id="link-inicio">Inicio</a></li>
+                <li><a href="#historia" class="nav-link" id="link-historia">Nuestra Historia</a></li>
+                <li><a href="#eventos" class="nav-link" id="link-eventos">Próximos Eventos</a></li>
+                <li><a href="#galeria" class="nav-link" id="link-galeria">Momentos</a></li>
+                <li><a href="anuncios.html" class="nav-link" id="link-anuncios">Anuncios</a></li>
+                <li><a href="anuncios.html#contacto" class="nav-link" id="link-contacto">Contacto</a></li>
+            </ul>
+            
+            <div class="nav-socials">
+                <a href="https://instagram.com" target="_blank" class="social-icon" aria-label="Instagram" id="social-instagram">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                </a>
+                <a href="https://wa.me/34600000000" target="_blank" class="social-icon" aria-label="WhatsApp" id="social-whatsapp">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                </a>
+            </div>
+            
+            <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- 2. HERO SECTION -->
+    <header class="hero" id="inicio">
+        <div class="hero-video-container">
+            <video class="hero-video" autoplay loop muted playsinline poster="1.jpg">
+                <source src="video_recreo.mp4" type="video/mp4">
+                <source src="pato_video.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="hero-overlay"></div>
+        
+        <div class="container text-center">
+            <div class="hero-content">
+                <p class="hero-subtitle">EXPERIENCIAS DE FIESTA EXCLUSIVAS</p>
+                <h1 class="hero-title">EL CONCEPTO ES SIMPLE:<br><span class="text-gradient">DECIR SÍ A TODO</span></h1>
+                <p class="hero-description">Nacimos para romper las reglas de la noche. Eventos salvajes, producción de élite y los mejores ambientes del país. Tu noche empieza diciendo Sí.</p>
+                <div class="hero-actions">
+                    <a href="#eventos" class="btn btn-primary" id="btn-hero-tickets">COMPRAR ENTRADAS</a>
+                    <a href="anuncios.html#contacto" class="btn btn-outline" id="btn-hero-reservados">RESERVADOS VIP</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <span>Desliza</span>
+            <div class="mouse-icon"></div>
+        </div>
+    </header>
+
+    <!-- 3. HISTORY SECTION -->
+    <section class="section section-dark" id="historia">
+        <div class="container">
+            <div class="history-grid">
+                <div class="history-images" id="history-images">
+                    <div class="history-img-wrapper img-large">
+                        <img src="maldita.jpg" alt="Ambiente de Fiesta Si a Todo">
+                    </div>
+                    <div class="history-img-wrapper img-small">
+                        <img src="2.jpg" alt="Concierto Si a Todo">
+                    </div>
+                </div>
+                
+                <div class="history-text" id="history-text">
+                    <span class="history-badge">Nuestra Trayectoria</span>
+                    <h2>CÓMO EMPEZÓ EL <span class="text-gradient">DESMADRE</span></h2>
+                    <p>En "Sí a Todo" no creemos en las medias tintas. Lo que comenzó como una reunión privada de amigos con ganas de fiesta se convirtió rápidamente en un movimiento que está redefiniendo el ocio nocturno en España.</p>
+                    <p>Organizaremos desde festivales masivos al aire libre hasta fiestas corporativas y privadas personalizadas, llevando el concepto del desmadre controlado y la máxima elegancia a cada cabina y pista de baile que pisamos.</p>
+                    <a href="anuncios.html" class="btn btn-outline" id="btn-history-more">Ver Últimas Novedades</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. UPCOMING EVENTS SECTION (LANDING PAPER) -->
+    <section class="section section-card" id="eventos">
+        <div class="container">
+            <div class="section-title-wrap text-center">
+                <span class="section-tag">CALENDARIO DE FECHAS</span>
+                <h2>PRÓXIMOS <span class="text-gradient">EVENTOS</span></h2>
+                <p>Consigue tus pases oficiales antes de que se agoten. Redirigimos directamente a las ticketeras oficiales asociadas.</p>
+            </div>
+            
+            <div class="events-list">
+                <!-- Evento 1 -->
+                <div class="event-row glass-panel" id="event-1">
+                    <div class="event-date">
+                        <span class="date-day">29</span>
+                        <span class="date-month">Mayo</span>
+                    </div>
+                    <div class="event-info">
+                        <span class="event-title">HIT CORPUS - EDICIÓN ESPECIAL</span>
+                        <div class="event-venue">
+                            <span class="venue-tag">TERRAZA LA CLAVEL</span> TOLEDO, ES
+                        </div>
+                    </div>
+                    <div class="event-action">
+                        <a href="https://www.giglon.com" target="_blank" class="btn btn-primary" id="btn-ticket-1">ENTRADAS</a>
+                    </div>
+                </div>
+                
+                <!-- Evento 2 -->
+                <div class="event-row glass-panel" id="event-2">
+                    <div class="event-date">
+                        <span class="date-day">05</span>
+                        <span class="date-month">Junio</span>
+                    </div>
+                    <div class="event-info">
+                        <span class="event-title">KREAM FESTIVAL - SET 3 HORAS</span>
+                        <div class="event-venue">
+                            <span class="venue-tag">SALA RAZZMATAZZ</span> BARCELONA, ES
+                        </div>
+                    </div>
+                    <div class="event-action">
+                        <a href="https://www.ticketmaster.es" target="_blank" class="btn btn-primary" id="btn-ticket-2">ENTRADAS</a>
+                    </div>
+                </div>
+                
+                <!-- Evento 3 -->
+                <div class="event-row glass-panel" id="event-3">
+                    <div class="event-date">
+                        <span class="date-day">12</span>
+                        <span class="date-month">Junio</span>
+                    </div>
+                    <div class="event-info">
+                        <span class="event-title">SI A TODO URBAN NIGHT</span>
+                        <div class="event-venue">
+                            <span class="venue-tag">SALA SPYRE</span> VALENCIA, ES
+                        </div>
+                    </div>
+                    <div class="event-action">
+                        <span class="btn btn-soldout" id="btn-ticket-3">SOLD OUT</span>
+                    </div>
+                </div>
+                
+                <!-- Evento 4 -->
+                <div class="event-row glass-panel" id="event-4">
+                    <div class="event-date">
+                        <span class="date-day">20</span>
+                        <span class="date-month">Junio</span>
+                    </div>
+                    <div class="event-info">
+                        <span class="event-title">BEACH CLUB MEDUSA - POOL PARTY</span>
+                        <div class="event-venue">
+                            <span class="venue-tag">MEDUSA BEACH</span> CULLERA, ES
+                        </div>
+                    </div>
+                    <div class="event-action">
+                        <a href="https://www.fourvenues.com" target="_blank" class="btn btn-primary" id="btn-ticket-4">ENTRADAS</a>
+                    </div>
+                </div>
+                
+                <!-- Evento 5 (Pasado) -->
+                <div class="event-row glass-panel passed-row" id="event-5">
+                    <div class="event-date">
+                        <span class="date-day">15</span>
+                        <span class="date-month">Mayo</span>
+                    </div>
+                    <div class="event-info">
+                        <span class="event-title">EL PARKING GRAND OPENING</span>
+                        <div class="event-venue">
+                            <span class="venue-tag">EL PARKING</span> TORREVIEJA, ES
+                        </div>
+                    </div>
+                    <div class="event-action">
+                        <span class="btn btn-soldout" id="btn-ticket-5">FINALIZADO</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ticker Promocional -->
+    <div class="ticker-banner">
+        <div class="ticker-wrap">
+            <div class="ticker-item"><span>ÚLTIMAS ENTRADAS DISPONIBLES</span> <div class="ticker-dot"></div></div>
+            <div class="ticker-item"><span>RESERVADOS VIP DISPONIBLES</span> <div class="ticker-dot"></div></div>
+            <div class="ticker-item"><span>SÍ A TODO FESTIVAL 2026</span> <div class="ticker-dot"></div></div>
+            <div class="ticker-item"><span>DILE SÍ A LA NOCHE</span> <div class="ticker-dot"></div></div>
+            <div class="ticker-item"><span>ÚLTIMAS ENTRADAS DISPONIBLES</span> <div class="ticker-dot"></div></div>
+            <div class="ticker-item"><span>RESERVADOS VIP DISPONIBLES</span> <div class="ticker-dot"></div></div>
+            <div class="ticker-item"><span>SÍ A TODO FESTIVAL 2026</span> <div class="ticker-dot"></div></div>
+            <div class="ticker-item"><span>DILE SÍ A LA NOCHE</span> <div class="ticker-dot"></div></div>
+        </div>
+    </div>
+
+    <!-- 5. MOMENTS GALLERY SECTION -->
+    <section class="section section-dark" id="galeria">
+        <div class="container">
+            <div class="section-title-wrap text-center">
+                <span class="section-tag">GALERÍA DE MOMENTOS</span>
+                <h2>EVENTOS MÁS <span class="text-gradient">ICÓNICOS</span></h2>
+                <p>Nuestra historia en imágenes. Revive el desmadre de las noches más locas de "Sí a Todo".</p>
+            </div>
+            
+            <div class="marquee-container">
+                <div class="marquee-wrapper" id="marquee-wrapper">
+                    <!-- Item 1 -->
+                    <div class="marquee-item">
+                        <img src="3.jpg" alt="Iconic Event 1">
+                        <div class="marquee-item-overlay">
+                            <span class="marquee-title">Opening Toledo 2025</span>
+                            <span class="marquee-desc">15,000 Personas</span>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="marquee-item">
+                        <img src="4.jpg" alt="Iconic Event 2">
+                        <div class="marquee-item-overlay">
+                            <span class="marquee-title">Pool Party Medusa</span>
+                            <span class="marquee-desc">Edición Sold Out</span>
+                        </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="marquee-item">
+                        <img src="5.jpg" alt="Iconic Event 3">
+                        <div class="marquee-item-overlay">
+                            <span class="marquee-title">Razzmatazz Invasion</span>
+                            <span class="marquee-desc">DJ Sets de Infarto</span>
+                        </div>
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="marquee-item">
+                        <img src="6.jpg" alt="Iconic Event 4">
+                        <div class="marquee-item-overlay">
+                            <span class="marquee-title">VIP Secret Club</span>
+                            <span class="marquee-desc">Noche Exclusiva</span>
+                        </div>
+                    </div>
+                    <!-- Duplicado para efecto infinito en CSS -->
+                    <div class="marquee-item">
+                        <img src="3.jpg" alt="Iconic Event 1">
+                        <div class="marquee-item-overlay">
+                            <span class="marquee-title">Opening Toledo 2025</span>
+                            <span class="marquee-desc">15,000 Personas</span>
+                        </div>
+                    </div>
+                    <div class="marquee-item">
+                        <img src="4.jpg" alt="Iconic Event 2">
+                        <div class="marquee-item-overlay">
+                            <span class="marquee-title">Pool Party Medusa</span>
+                            <span class="marquee-desc">Edición Sold Out</span>
+                        </div>
+                    </div>
+                    <div class="marquee-item">
+                        <img src="5.jpg" alt="Iconic Event 3">
+                        <div class="marquee-item-overlay">
+                            <span class="marquee-title">Razzmatazz Invasion</span>
+                            <span class="marquee-desc">DJ Sets de Infarto</span>
+                        </div>
+                    </div>
+                    <div class="marquee-item">
+                        <img src="6.jpg" alt="Iconic Event 4">
+                        <div class="marquee-item-overlay">
+                            <span class="marquee-title">VIP Secret Club</span>
+                            <span class="marquee-desc">Noche Exclusiva</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. SPONSORS & COLLABORATORS -->
+    <section class="section section-card" id="colaboradores">
+        <div class="container">
+            <div class="section-title-wrap text-center">
+                <span class="section-tag">COOPERACIÓN</span>
+                <h2>PATROCINADORES Y <span class="text-gradient">COLABORADORES</span></h2>
+                <p>Marcas líderes que confían en "Sí a Todo" para potenciar el desmadre y la exclusividad.</p>
+            </div>
+            
+            <div class="sponsors-grid">
+                <div class="sponsor-card glass-panel" id="sponsor-1">
+                    <img src="12.jpg" alt="Sponsor 1: Absolut">
+                </div>
+                <div class="sponsor-card glass-panel" id="sponsor-2">
+                    <img src="13.jpg" alt="Sponsor 2: RedBull">
+                </div>
+                <div class="sponsor-card glass-panel" id="sponsor-3">
+                    <img src="14.jpg" alt="Sponsor 3: Fourvenues">
+                </div>
+                <div class="sponsor-card glass-panel" id="sponsor-4">
+                    <img src="logo_si_a_todo.jpg" alt="Sponsor 4: Sí a Todo Brand">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="footer-brand-title">SÍ A <span>TODO</span></a>
+                    <p class="footer-desc">Redefiniendo el ocio nocturno y los eventos corporativos con elegancia, exclusividad y desmadre.</p>
+                </div>
+                
+                <div>
+                    <h4 class="footer-col-title">Navegación</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="#historia">Nuestra Historia</a></li>
+                        <li><a href="#eventos">Eventos</a></li>
+                        <li><a href="#galeria">Momentos Icónicos</a></li>
+                        <li><a href="anuncios.html">Tablón de Anuncios</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="footer-col-title">Reservas & VIP</h4>
+                    <ul class="footer-links">
+                        <li><a href="anuncios.html#contacto">Reservar Mesa VIP</a></li>
+                        <li><a href="https://www.fourvenues.com" target="_blank">Listas de Invitados</a></li>
+                        <li><a href="anuncios.html#contacto">Formulario de Contacto</a></li>
+                        <li><a href="https://wa.me/34600000000" target="_blank">WhatsApp Directo</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="footer-col-title">Dirección</h4>
+                    <div class="footer-contact-info">
+                        <div class="footer-contact-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            <span>Paseo de la Castellana, 120<br>Madrid, ES</span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            <span>contacto@siatodo.es</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom-bar">
+                <p>&copy; 2026 SÍ A TODO S.L. Todos los derechos reservados.</p>
+                <div class="footer-social-wrap">
+                    <a href="https://instagram.com" target="_blank" class="social-icon" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+                    <a href="https://tiktok.com" target="_blank" class="social-icon" aria-label="TikTok"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path></svg></a>
+                    <a href="https://youtube.com" target="_blank" class="social-icon" aria-label="YouTube"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script principal -->
+    <script src="js/script.js"></script>
+</body>
+</html>
