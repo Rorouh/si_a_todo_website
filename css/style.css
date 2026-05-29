@@ -755,36 +755,76 @@ a {
 
 /* Ticker banner */
 .ticker-banner {
-    background: var(--primary);
-    color: var(--bg-dark);
-    padding: 0.8rem 0;
+    position: relative;
+    background: rgba(12, 12, 14, 0.85);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-top: 1px solid rgba(255, 215, 0, 0.15);
+    border-bottom: 1px solid rgba(255, 215, 0, 0.15);
+    padding: 1.1rem 0;
     overflow: hidden;
     display: flex;
-    font-family: 'Syne', sans-serif;
-    font-weight: 800;
-    font-size: 1.1rem;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 0.95rem;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.18em;
+    z-index: 10;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), inset 0 0 20px rgba(255, 215, 0, 0.02);
+}
+
+.ticker-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.35), transparent);
+}
+
+.ticker-banner::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.35), transparent);
 }
 
 .ticker-wrap {
     display: flex;
     width: max-content;
-    animation: ticker 15s linear infinite;
+    animation: ticker 22s linear infinite;
     gap: 4rem;
 }
 
 .ticker-item {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 1.5rem;
+}
+
+.ticker-item span {
+    background: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    text-shadow: 0 0 15px rgba(255, 215, 0, 0.1);
+    transition: var(--transition-fast);
+}
+
+.ticker-item:hover span {
+    text-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
 }
 
 .ticker-dot {
-    width: 8px;
-    height: 8px;
-    background-color: var(--bg-dark);
+    width: 6px;
+    height: 6px;
+    background-color: var(--accent);
     border-radius: 50%;
+    box-shadow: 0 0 12px var(--accent), 0 0 4px var(--accent);
 }
 
 @keyframes ticker {
