@@ -12,11 +12,11 @@
     /* Colors */
     --bg-dark: #070708;
     --bg-card: #121214;
-    --primary: #D4AF37; /* Oro Champagne */
-    --primary-glow: rgba(212, 175, 55, 0.35);
+    --primary: #FFD700; /* Oro 24K Base */
+    --primary-glow: rgba(255, 215, 0, 0.35);
     --secondary: #9d4edd; /* Violeta Eléctrico */
     --accent: #ff007f; /* Fucsia Neón */
-    --accent-gradient: linear-gradient(135deg, #FFF380 0%, #D4AF37 100%);
+    --accent-gradient: linear-gradient(135deg, #FFF6A3 0%, #FFD700 50%, #B8860B 100%);
     --neon-gradient: linear-gradient(90deg, #ff007f, #9d4edd, #D4AF37, #ff007f);
     
     /* Text colors */
